@@ -1,0 +1,18 @@
+﻿<Window x:Class="RemindMe.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RemindMe"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525" WindowStartupLocation="CenterScreen" WindowStyle="None" Loaded="Window_Loaded">
+    <Grid>
+        <Label HorizontalAlignment="Right" VerticalAlignment="Top" >
+            <TextBlock x:Name="txtDateToday">XX.XX.XX</TextBlock>
+        </Label>
+        <TextBlock x:Name="txtMessage" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding Path=Message}"/>
+        <Button x:Name="btnOk" HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="btnOk_Click">
+            <TextBlock Text="OK" />
+        </Button>
+    </Grid>
+</Window>
